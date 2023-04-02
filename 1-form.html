@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/players/player-1.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/1-form.css">
+    <script src="https://kit.fontawesome.com/ccd2a9bd04.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  
+    <form>
+       <label for="firstname">First-Name
+         <input type="text" name="firstname" id="firstname" placeholder="First-Name" required>
+       </label>
+       <label for="lastname">Last-Name
+         <input id="lastname" type="text" name="lastname" placeholder="lastname" value="Your-Last-Name" required>
+       </label>
+       <label for="email">Email
+         <input type="email" name="email" id="email" placeholder="Enter Email" required>
+       </label>
+       <label for="password">Password
+         <input type="password" name="password" id="password" placeholder="Enter Password">
+       </label>
+       <label for="age">Age
+       <input type="number" name="age" id="age" min="15" max="150" step="10">
+      </label>
+      <label for="date">Date Of Birth
+         <input type="date" name="date" id="date">
+      </label>
+      <label for="select">Choos-Catagory
+          <select name="option" id="option">
+              <option>Mobile-Repair</option>
+              <option>Education</option>
+              <option>Home-Work</option>
+          </select>
+      </label>
+      <label for="terms">Terms
+        <input type="checkbox" name="terms" id="terms">
+      </label>
+      <label for="notify-me">Notifycation
+        <input type="checkbox" name="notify-me" id="notify-me">
+      </label>
+      <fieldset>
+        <legend>Male</legend>
+        <label for="male">
+          <input type="radio" name="gender" id="male"> Male
+        </label>
+        <label for="female">
+          <input type="radio" name="gender" id="female"> Female
+        </label>
+        <label for="other">
+          <input type="radio" name="gender" id="other"> Other
+        </label>
+      </fieldset>
+      <label for="url">Website Url
+        <input type="url" name="url" id="url">
+      </label>
+      <label for="file">CHOOS-FILE
+           <input type="file" name="file" id="file">
+      </label>
+      <label for="color">Select Color
+        <input type="color" name="color" id="color">
+      </label>
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+       
+    </form>
+    
+
+
+    
+    
+    
+
+    
+    
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

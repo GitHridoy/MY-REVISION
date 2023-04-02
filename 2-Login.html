@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/players/player-1.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/2-Login.css">
+    <script src="https://kit.fontawesome.com/ccd2a9bd04.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <header>
+     <nav>
+      <ul>
+        <div class="logo">
+        <a href="http://gsmbdshop.com" target="_blank">
+          <img src="images/user-1.png" alt="">
+        </a>
+        </div>
+        <span class="menu">
+        <li>
+          <i class="fa-solid fa-house wh"></i>
+          <a href="https://www.gsmbdshop.com " target="_blank">Home</a>
+        </li>
+        <li><a href="">Courses</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">About</a></li>
+        <li><i class="fa-solid fa-address-book contact"></i>
+          <a href="">Contact</a>
+        </li>
+        
+      </span>
+      <span class="search-box">
+            <input type="text" id="text" placeholder="Search Your Product">
+      </span>
+      <span>
+        <i class="fa-solid fa-right-to-bracket log-icon"></i>
+        <button class="bt">Login</button>
+        <button class="bt">Sign-Up</button>
+      </span>
+      </ul>
+     </nav>
+  </header>
+  <!-- main start -->
+    <main>
+      <div class="center">
+        <h1>Login</h1>
+        <form action="post">
+          <div class="text_field">
+            <input type="email" name="email" id="email" required>
+            <label for="email">Username/Email</label>
+          </div>
+          <div class="text_field">
+            <input type="password" id="Show" required>
+            <label for="password">Password</label>
+          </div>
+          <div class="Show-Pass">
+          <label for=""><i class="fa-solid fa-eye"></i></label>
+          <input class="sh" type="checkbox" name="" onclick="myFunction()">
+        </div>
+          <label class="pass" for=""><a href="">Forgot Password ?</a></label>
+          <div class="check">Remamber Me
+            <input type="checkbox" name="checkbox" id="checkbox">
+          </div>
+          <input class="sub-bt" type="submit" value="submit">
+        </form>
+      </div>
+     
+    </main>
+    <!-- main end -->
+    <footer>
+       
+    </footer>
+    
+    <script type="text/javascript">
+       function myFunction() {
+        var show = document.getElementById('Show');
+        if (show.type=='password') {
+          show.type='text';
+        }
+        else{
+          show.type='password';
+        }
+       }
+    </script>
+
+    
+    
+    
+
+    
+    
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

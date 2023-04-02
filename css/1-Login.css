@@ -1,0 +1,40 @@
+h1{
+  position: relative;
+  right: -15px;
+  top: -10px;
+}
+form{
+    background-color: white;
+    padding: 50px 100px 50px 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    
+}
+form div{
+    margin-bottom: 20px;
+}
+form .email{
+    position: relative;
+    left: -30px;
+}
+form .password{
+      position: relative;
+      left: -55px;
+}
+form input{
+    width: 300px;
+    padding: 5px;
+    
+}
+form input::placeholder{
+    color: red;
+    padding-left: 20px;
+}
+form button{
+    position: relative;
+    right: -12px;
+    padding: 3px 10px 3px 10px;
+    border: none;
+    background-color: rgb(87, 172, 247);
+    color: white;
+}

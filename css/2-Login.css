@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    position: relative;
+    top: 200px;
+    left: -180px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.center h1{
+    position: relative;
+    left: 65px;
+    top: 30px;
+}
+.center form{
+    padding: 20px 70px;
+    
+}
+form .text_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.text_field input{
+    width: 400px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    
+}
+.text_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    
+    
+}
+.text_field span::before{
+    content: '';
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.pass a{
+    margin-bottom: 10px;
+    margin-left: 200px;
+    cursor: pointer;
+    
+    
+}
+.check{
+    position: relative;
+    top: -30px;
+}
+.sub-bt{
+    padding: 5px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2691d9;
+    color: white;
+    font-size: 20px;
+
+}
+.sub-bt:hover{
+    background-color: #126daa;
+}
+.Show-Pass{
+    position: relative;
+    top: -53px;
+    left: 360px;
+}

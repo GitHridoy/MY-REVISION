@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Itim&display=swap');
+
+
+:root{
+    --button: rgb(15, 185, 106);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Itim', cursive;
+    
+}
+body{
+    background-color: rgb(217, 217, 252);
+    justify-content: center;
+    display: flex;
+    
+    
+}
+/* header start */
+header{
+    background-color: rgb(97, 42, 114);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0 3px 5px 0px rgb(2, 2, 2);
+}
+nav{
+  padding-top: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+   position: relative;
+   top: -5px;
+   right: 6px;
+
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    
+}
+.online{
+    position: relative;
+    top: -12px;
+    left: 27px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(8, 224, 26);
+    display: block;
+    border-radius: 6px;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 70px;
+    
+}
+.menu .wh{
+   color: greenyellow;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+.search-box input{
+    position: relative;
+    width: 350px;
+    padding: 2px 0 2px 0;
+    top: -2px;
+    border-radius: 5px;
+    
+}
+.search-box input:focus{
+    outline: none;
+    
+}
+.contact{
+    color: yellowgreen;
+    
+}
+.search-box input::-webkit-input-placeholder{
+    color: rgb(240, 183, 165);
+    padding-left: 10px;
+}
+.bt{
+    padding: 0 7px 0 7px;
+    border: none;
+    background-color: var(--button);
+    color: white;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.bt a{
+    text-decoration: none;
+    color: white;
+}
+.log-icon{
+    color: white;
+}
+/* header end */
+.title{
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* top player start */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contain{
+    width: 850px;
+    
+    
+    
+}
+.top-title{
+    padding-bottom: 30px;
+    color: red;
+    font-weight: 500;
+    
+}
+.player-title{
+    margin-left: 10px;
+}
+.top-players{
+    margin-top: 140px;
+    background-color: white;
+    padding: 30px;
+    
+    
+}
+.players{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 50px;
+   
+}
+.player{
+   display: flex;
+   align-items: center;
+   
+}
+.player img{
+    width: 55px;
+    height: 55px;
+}
+hr{
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+/* top player end */
+
+/* top blogs start */
+.top-blogs{
+   margin-top: 50px;
+   background-color: white;
+   padding: 30px;
+}
+.blogs{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 50px;
+   grid-column-gap: 50px;
+   
+   
+}
+.blog{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  
+}
+.blog .im img{
+    width: 200px;
+    
+}
+.blog-info{
+    width: 180px;
+}
+.blog-title{
+    font-size: 22px;
+}
+/* top blogs end */
+.Latest-courses{
+   display: flex;
+   margin-top: 30px;
+   align-items: center;
+   justify-content: center;
+   column-gap: 30px;
+   background-color: white;
+   padding: 30px;
+   margin-bottom: 50px;
+}
+.courses{
+
+}
+.course{
+
+}
+.course img{
+    width: 245px;
+    height: 150px;
+}
+h2{
+    width: 190px;
+    font-size: 20px;
+}
+.rateing{
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+.fa-star{
+    color: rgb(255, 196, 0);
+}
+.black{
+    color: rgb(110, 110, 110);
+}
+
+/* expert section start */
+.expert-info{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(250, 249, 247);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.expert{
+
+}
+.expert img{
+    width: 350px;
+    padding: 30px;
+}
+.expert-des{
+    width: 350px;
+}
+.expert-btn{
+    padding: 5px 20px 5px 20px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+.expert-btn:hover{
+    background-color: green;
+}
+
+/* expert option 2 nd */
+.expert-info2{
+    display: flex;
+    
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(250, 249, 247);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.expert2{
+
+}
+.expert2 img{
+    width: 350px;
+    padding: 30px;
+}
+.expert-des2{
+    width: 350px;
+}
+.expert-btn2{
+    padding: 5px 20px 5px 20px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+.expert-btn2:hover{
+    background-color: green;
+}
+.hr{
+    position: relative;
+    top: -70px;
+    width: 170px;
+    margin-left: 100px;
+}
+/* bloger section */
+.bloger{
+   display: flex;
+   flex-direction: row-reverse;
+   column-gap: 200px;
+   align-items: center;
+   background-color: white;
+   padding: 30px;
+}
+.bloging-pic{
+    width: 250px;
+}
+.bloging-pic img{
+    width: 100%;
+}
+.bloging-des{
+    width: 250px;
+}
+/* box section */
+.box-itemer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.box-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(29, 248, 157);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 50%;
+
+}
+.boxes .green{
+    background-color: rgb(0, 255, 213);
+}
+.boxes .yel{
+    background-color: yellow;
+}
+.boxes .ph{
+    background-color: rgb(69, 103, 133);
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices go here */
+    main{
+        max-width: 700px;
+    }
+    .contain{
+       width: 700px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets go here */
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Styles for small desktops go here */
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
