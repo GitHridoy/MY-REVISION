@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            gap: 30px;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        ul li a:link{
+            color: red;
+        }
+        ul li a:visited{
+            color: aqua;
+        }
+        .child{
+            display: flex;
+            gap: 20px;
+        }
+        .child div{
+           width: 250px;
+           height: 250px;
+           background-color: aqua;
+           border-radius: 10px;
+
+        }
+        .child div:nth-child(2){
+            background-color: red;
+        }
+        .child div:nth-child(3){
+            background-color: black;
+        }
+        .child div:nth-child(4){
+            background-color: greenyellow;
+        }
+        p::first-line{
+            color: red;
+        }
+        h2::first-letter{
+            color: red;
+        }
+        h1::before{
+            content: 'This is content';
+        }
+        .after::after{
+            content: 'This is content';
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://gsmbdshop.com" target="_blank">Home</a></li>
+        <li><a href="https://youtube.com" target="_blank">Product</a></li>
+        <li><a href="https://google.com" target="_blank">Services</a></li>
+    </ul>
+    <div class="child">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint excepturi iusto minima accusantium blanditiis quidem pariatur, iste placeat odit iure! Repellendus eum tempore beatae, sequi autem recusandae veniam laborum inventore eius, provident quasi sit assumenda rerum ipsum quibusdam modi expedita nobis velit amet. Placeat facilis exercitationem excepturi aliquam magnam in?</p>
+    
+    <h1>::before css tag</h1>
+    <span class="after">::after css tag</span>
+    <h2>how to first word color by css</h2>
+    <h2>how to first word color by css</h2>
+    <h2>how to first word color by css</h2>
+    <h2>how to first word color by css</h2>
+    <h2>how to first word color by css</h2>
+    <h2>how to first word color by css</h2>
+</body>
+</html>

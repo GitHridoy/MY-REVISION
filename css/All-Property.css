@@ -30,6 +30,12 @@ body{
   text-shadow: 5px 5px red;
   display: block   inline   inline-block;
 }
+ul li a:link{
+  color: red;
+}
+ul li a:visited{
+  color: aqua;
+}
 
 /* text property adding end */
 
@@ -41,6 +47,16 @@ body{
 /* Width height display property */
 .div{
     visibility: hidden;
+    overflow: hidden auto;
+    overflow-x: auto;
+    
 }
+.child div:nth-child(2){
+  background-color: red;
+}
+.child:first-child{
+
+}
+p::first-line
 /* Width height display property */
 
