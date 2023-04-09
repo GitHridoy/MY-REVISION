@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+          display: flex;
+          gap: 20px;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            border-radius: 10px;
+        }
+        .boxes .one{
+           background-color: blueviolet;
+        }
+        .boxes .one:hover{
+            transform: rotate(50deg);
+            transition: 1s ease;
+           
+        }
+        .boxes .two{
+
+        }
+        .boxes .two img{
+            width: 100%;
+        }
+        .boxes .two img:hover{
+            transform: scale(1.5);
+            transition: 1s ease;
+        }
+        .boxes .three:hover{
+            margin-top: -20px;
+            transition: 1s ease;
+        }
+        .boxes .four:hover{
+           transform: skew(-20deg);
+           transition: 1s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box one">
+            <h1>.boxes .one:hover</h1>
+        </div>
+        <div class="box two">
+           <img src="images/players/player-1.png" alt="">
+        </div>
+        <div class="box three">
+
+        </div>
+        <div class="box four">
+
+        </div>
+    </div>
+</body>
+</html>
