@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        #fade, #toggle, #slide{
+            margin-left: 150px;
+            margin-bottom: 10px;
+        }
+        .content{
+            display: flex;
+        }
+        .box1 {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: red;
+            margin-top: 20px;
+            display: none;
+            
+        }
+        .box2{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(0, 241, 40);
+            margin-top: 20px;
+            display: none;
+        }
+        .box3{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(94, 79, 79);
+            margin-top: 20px;
+            display: none;
+        }
+        .box4 {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: red;
+            margin-top: 20px;
+            display: none;
+            
+        }
+        .box5{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(0, 241, 40);
+            margin-top: 20px;
+            display: none;
+        }
+        .box6{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgb(94, 79, 79);
+            margin-top: 20px;
+            display: none;
+        }
+        .slidebox{
+            
+        }
+        #slidep{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 5rem;
+
+        }
+    </style>
+</head>
+<body>
+     <!-- box fade in toggle -->
+       <button id="fade" type="button">Fade in</button>
+       <div class="content">
+       <div class="box1"></div>
+       <div class="box2"></div>
+       <div class="box3"></div>
+    </div>
+     <!-- box fade in toggle end -->
+     <!-- box toggle  -->
+       <button id="toggle" type="button">Fade Toggle</button>
+       <div class="content">
+       <div class="box4"></div>
+       <div class="box5"></div>
+       <div class="box6"></div>
+    </div>
+     <!-- box toggle end -->
+
+     <!-- slide up down toogle section -->
+     <button type="button" id="slide">Slide Toggle</button>
+     <div class="slidebox">
+        <p id="slidep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis libero beatae odit praesentium maiores.</p>
+     </div>
+     <!-- slide up down toogle section end -->
+ 
+    <!-- how to close up button create -->
+    <h2>how to create a button hide and show</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, expedita.</p>
+    <button id="Hide" type="button">Hide</button>
+    <button id="Show" type="button">Show</button>
+    <!-- how to close up button create end -->
+
+    <!-- how to add extra text -->
+    <p id="extratext">how to add extra text</p>
+    <button type="button" id="extrabtn">Add more text</button>
+    <!-- how to add extra text -->
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+    <script>
+    //   how to hide show btn create//
+    $(document).ready(function(){
+        $('#Hide').click(function(){
+            $('p').hide('fast');
+        });
+        $('#Show').click(function(){
+            $('p').show('slow');
+        });
+    });
+    //   how to hide show btn create//
+
+    // how to fade in toogle//
+    $(document).ready(function(){
+        $('#fade').click(function(){
+            $('.box1').fadeIn(); 
+            $('.box2').fadeIn();
+            $('.box3').fadeIn();
+        });
+    })
+    // how to fade in toogle end//
+    // how to fade in toogle//
+    $(document).ready(function(){
+        $('#toggle').click(function(){
+            $('.box4').fadeToggle(); 
+            $('.box5').fadeToggle();
+            $('.box6').fadeToggle();
+        });
+    })
+    // how to fade in toogle end//
+    
+    // slide up toggle button//
+         $(document).ready(function(){
+            $('#slide').click(function(){
+            $('#slidep').slideToggle(500)
+            })
+         })
+    // slide up toggle button end//
+
+    // how to add extra text//
+    $(document).ready(function(){
+        $('#extrabtn').click(function(){
+            $('#extratext').prepend('<b>Width Jquery</b>'); append
+        })
+    })
+    // how to add extra text end//
+    </script>
+</body>
+</html>

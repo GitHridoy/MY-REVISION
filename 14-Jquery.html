@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        h3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- how to text hidden -->
+<h2>How to hide any text with jquery</h2>
+<button id="hide">Hide Text</button>
+<!-- how to text hidden end -->
+<br><br>
+<!-- How to show hedden text -->
+<h3>How to show hidden text with jquery</h3>
+<button id="Show">Show Text</button>
+<br><br>
+<!-- How to show hedden text end -->
+
+<!-- How to alert pop up -->
+<p>How to alert pop up with jquery</p>
+<button id="alert">Pop Up Mous Hover</button>
+<br><br>
+<!-- How to alert pop up end -->
+
+
+<!-- How to alert pop up -->
+<p>How to button hide with jquery</p>
+<button id="bthide">Mous Hover button hide</button>
+<br><br>
+<!-- How to alert pop up end -->
+
+<!-- How to alert pop up -->
+<p>How to button hide mous leave hover with jquery</p>
+<button id="btleave">Mous Hover leave button hide</button>
+<br><br>
+<!-- How to alert pop up end -->
+
+<!-- How to alert pop up -->
+<h5>How to text toggle button with jquery</h5>
+<button id="bttoggle">how to toggle button</button>
+<br><br>
+<!-- How to alert pop up end -->
+
+<!-- how to change color any input tag -->
+<h6>How to change input background color</h6>
+<input type="text" placeholder="email">
+<!-- how to change color any input tag end -->
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+ <script>
+   $(document).ready(function(){
+     $('#hide').click(function(){
+        $('h2').hide();
+        
+     })
+   });
+
+   //    how to show hidden text//
+$(document).ready(function(){
+     $('#Show').click(function(){
+        $('h3').show();
+        
+     })
+   });
+//    how to show hidden text//
+
+// how to alert pop up//
+$(document).ready(function(){
+  $('#alert').mouseenter(function(){
+    alert('hi');
+  });
+})
+// how to alert pop up end//
+
+// how to mous hover bt hide//
+$(document).ready(function(){
+  $('#bthide').mouseenter(function(){
+      $(this).hide();
+  });
+})
+// how to mous hover bt hide end//
+
+// how to mous leave bt hide//
+$(document).ready(function(){
+  $('#btleave').mouseleave(function(){
+      $(this).hide();
+  });
+})
+// how to mous leave bt hide end//
+
+// how to bt toggle click//
+$(document).ready(function(){
+  $('#bttoggle').click(function(){
+    $('h5').toggle('fast')
+  });
+});
+// how to bt toggle click end//
+
+// how to change input background color//
+$(document).ready(function(){
+  $('input').on('focus', function(){
+    $(this).css('background-color', '#cccc')
+  })
+})
+// how to change input background color end//
+ </script>
+</body>
+</html>
