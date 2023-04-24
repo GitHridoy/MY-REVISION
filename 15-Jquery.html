@@ -73,6 +73,21 @@
             height: 5rem;
 
         }
+        #content-box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+        }
+        .classbox{
+            width: 250px;
+            height: 250px;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+        .extracalss{
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -110,7 +125,29 @@
     <!-- how to add extra text -->
     <p id="extratext">how to add extra text</p>
     <button type="button" id="extrabtn">Add more text</button>
+    <br><br>
     <!-- how to add extra text -->
+
+    <!-- how to empty any eliments of text or content  -->
+    <div id="content-box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, enim.</p>
+    </div>
+    <br>
+     <button type="button" id="textareabtn">Remove Content</button>
+    <!-- how to empty any eliments of text or content  -->
+
+    <!-- how to add a new class html tag -->
+    <div class="classbox">
+
+    </div>
+    <button class="classboxbtn">Add a class</button>
+    <!-- how to add a new class html tag end -->
+
+    <!-- how to change style text bg others -->
+    <p id="cssp">Lorem ipsum dolor sit amet consectetur.</p>
+    <button id="cssbt">Change Style</button>
+
+    <!-- how to change style text bg others end -->
 
 
 
@@ -164,6 +201,33 @@
         })
     })
     // how to add extra text end//
+
+    // how to remove any eliments of content//
+    $(document).ready(function(){
+        $('#textareabtn').click(function(){
+            $('#content-box').empty()
+        })
+    })
+    // how to remove any eliments of content end//
+
+    // how to add a new class//
+    $(document).ready(function(){
+        $('.classboxbtn').click(function(){
+            $('.classbox').addClass('extracalss'); removeClass / toggleClass
+        })
+    })
+    // how to add a new class end//
+
+    // how to change style jQuery//
+    $(document).ready(function(){
+        $('#cssbt').click(function(){
+            $('#cssp').css({
+                'color' : 'white',
+                'background-color' : 'green',
+            })
+        })
+    })
+    // how to change style jQuery end//
     </script>
 </body>
 </html>
